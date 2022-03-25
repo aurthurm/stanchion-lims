@@ -1,0 +1,23 @@
+{
+  "stanchionApp": {
+    "analysisProfile": {
+      "home": {
+        "title": "Analysis Profiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Analysis Profile",
+        "createOrEditLabel": "Create or edit a Analysis Profile",
+        "notFound": "No Analysis Profiles found"
+      },
+      "created": "A new Analysis Profile is created with identifier {{ param }}",
+      "updated": "A Analysis Profile is updated with identifier {{ param }}",
+      "deleted": "A Analysis Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Analysis Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Analysis Profile"
+      },
+      "id": "ID"
+    }
+  }
+}

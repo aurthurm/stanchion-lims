@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105635",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "laboratory",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Laboratory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

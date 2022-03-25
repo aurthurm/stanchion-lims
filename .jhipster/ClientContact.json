@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105637",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "client_contact",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientContact",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

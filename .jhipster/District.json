@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105633",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "district",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "District",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

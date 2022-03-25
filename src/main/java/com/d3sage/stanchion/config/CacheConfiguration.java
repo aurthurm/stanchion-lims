@@ -48,6 +48,31 @@ public class CacheConfiguration {
             createCache(cm, com.d3sage.stanchion.domain.User.class.getName());
             createCache(cm, com.d3sage.stanchion.domain.Authority.class.getName());
             createCache(cm, com.d3sage.stanchion.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.d3sage.stanchion.domain.Country.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.District.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Province.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Laboratory.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Client.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.ClientContact.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Patient.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.PatientIdentifierType.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.PatientIdentifier.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.LaboratoryRequest.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.SampleType.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.AnalysisProfile.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.AnalysisService.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Sample.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Analysis.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Location.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Department.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.d3sage.stanchion.domain.Task.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.d3sage.stanchion.domain.Employee.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.d3sage.stanchion.domain.Job.class.getName());
+            createCache(cm, com.d3sage.stanchion.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.d3sage.stanchion.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

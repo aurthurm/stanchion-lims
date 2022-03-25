@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105632",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "country",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Country",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "province",
+      "otherEntityRelationshipName": "country",
+      "ownerSide": true,
+      "relationshipName": "province",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "province",
+      "otherEntityRelationshipName": "country",
+      "relationshipName": "province",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105645",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "sample",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Sample",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
