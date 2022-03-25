@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105638",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "patient",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Patient",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "patientIdentifier",
+      "otherEntityRelationshipName": "patient",
+      "relationshipName": "identifier",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "clientRequestId",
+      "otherEntityName": "laboratoryRequest",
+      "otherEntityRelationshipName": "patient",
+      "relationshipName": "laboratoryRequest",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

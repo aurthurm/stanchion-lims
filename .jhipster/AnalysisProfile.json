@@ -1,0 +1,15 @@
+{
+  "applications": "*",
+  "changelogDate": "20220325105643",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "analysis_profile",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AnalysisProfile",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

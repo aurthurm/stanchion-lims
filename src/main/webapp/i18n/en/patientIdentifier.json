@@ -1,0 +1,26 @@
+{
+  "stanchionApp": {
+    "patientIdentifier": {
+      "home": {
+        "title": "Patient Identifiers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Patient Identifier",
+        "createOrEditLabel": "Create or edit a Patient Identifier",
+        "notFound": "No Patient Identifiers found"
+      },
+      "created": "A new Patient Identifier is created with identifier {{ param }}",
+      "updated": "A Patient Identifier is updated with identifier {{ param }}",
+      "deleted": "A Patient Identifier is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Patient Identifier {{ id }}?"
+      },
+      "detail": {
+        "title": "Patient Identifier"
+      },
+      "id": "ID",
+      "type": "Type",
+      "value": "Value",
+      "type": "Type"
+    }
+  }
+}

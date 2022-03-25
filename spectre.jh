@@ -1,0 +1,184 @@
+// spectre-limsan 
+
+//
+entity Country {
+	name String
+}
+
+entity District {
+	name String
+}
+
+entity Province {
+	name String
+}
+
+entity Laboratory {
+	name String
+}
+
+entity Client {
+	name String
+}
+
+entity ClientContact {
+	name String
+}
+
+entity Patient {
+	firstName String
+    lastName String
+}
+
+entity PatientIdentifierType {
+	name String
+}
+
+entity PatientIdentifier {
+	type String
+    value String
+}
+
+entity LaboratoryRequest {
+	clientRequestId String
+}
+
+entity SampleType {
+
+}
+
+entity AnalysisProfile {
+
+}
+
+entity AnalysisService {
+
+}
+
+entity Sample {
+
+}
+
+entity Analysis {
+
+}
+
+// Relationships
+relationship ManyToOne {
+	Country{province(name)} to Province
+	Province{district(name)} to District
+	Client{contact(name)} to ClientContact
+    PatientIdentifier{type} to PatientIdentifierType
+    Patient{identifier} to PatientIdentifier
+	Client{patient(name)} to Patient
+    Patient{laboratoryRequest(clientRequestId)} to LaboratoryRequest
+}
+
+// end spectre lims
+
+
+// an ignored comment
+/** not an ignored comment */
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+entity Department {
+	departmentName String required
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+entity Task {
+	title String,
+	description String
+}
+
+/**
+ * The Employee entity.
+ */
+entity Employee {
+	/**
+	* The firstname attribute.
+	*/
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String,
+	hireDate Instant,
+	salary Long,
+	commissionPct Long
+}
+
+entity Job {
+	jobTitle String,
+	minSalary Long,
+	maxSalary Long
+}
+
+entity JobHistory {
+	startDate Instant,
+	endDate Instant,
+	language Language
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+relationship OneToOne {
+	Country{province} to Province
+}
+
+relationship OneToOne {
+	Location{country} to Country
+}
+
+relationship OneToOne {
+	Department{location} to Location
+}
+
+relationship ManyToMany {
+	Job{task(title)} to Task{job}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Employee to Job{employee},
+	/**
+	* A relationship
+	*/
+	Department to
+	/**
+	* Another side of the same relationship
+	*/
+	Employee{department}
+}
+
+relationship ManyToOne {
+	Employee{manager} to Employee
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	JobHistory{job} to Job,
+	JobHistory{department} to Department,
+	JobHistory{employee} to Employee
+}
+
+// Set pagination options
+//paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
